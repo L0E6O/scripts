@@ -1,5 +1,4 @@
 #!/bin/sh
-su
 mkdir -p /data
 chmod 701 /data
 groupadd sftp_users
