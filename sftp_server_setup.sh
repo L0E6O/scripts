@@ -9,7 +9,7 @@ chown -R root:sftp_users /data/remote_SFTP_user
 chown -R remote_SFTP_user:sftp_users /data/remote_SFTP_user/upload
 echo "Match Group sftp_users
 ChrootDirectory /data/%u
-ForceCommand internal-sftp" > /etc/ssh/sshd_config
+ForceCommand internal-sftp" >> /etc/ssh/sshd_config
 systemctl restart sshd
 dnf install ufw -y
 systemctl enable sshd
